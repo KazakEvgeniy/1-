@@ -4,6 +4,10 @@ import AOS from 'aos';
 import Swiper from 'swiper/bundle';
 import SwiperCore, { Navigation, Pagination } from 'swiper/core';
 
+
+AOS.init();
+
+
 SwiperCore.use([Navigation, Pagination]);
 
 
@@ -17,6 +21,7 @@ const swiper = new Swiper('.swiper-container', {
 	pagination: {
 		el: '.swiper-pagination',
 		type: 'bullets',
+		clickable: true
 		// bulletActiveClass: 'act'
 	},
 	effect: 'cube',
@@ -34,61 +39,59 @@ const swiper = new Swiper('.swiper-container', {
 		el: '.swiper-scrollbar',
 
 	},
+
 });
 
 
 
+// function menuSliderRemove() {
+// 	let menuLinkActive = document.querySelectorAll('.menu__link._active');
+// 	if (menuLinkActive) {
+// 		menuLinks.classList.remove('_active');
+// 	}
+// }
+
+// swiper.init();
+
+// const listBtn = document.querySelector('.product__slide-list');
+// const sliderImg = document.querySelectorAll('.swiper-slide');
+// const productSlideItem = document.querySelectorAll('.product__slide-item');
 
 
+// function hidencontentandTabClassActiv() {
 
-const listBtn = document.querySelector('.product__slide-list');
-const sliderImg = document.querySelectorAll('.swiper-slide');
-const productSlideItem = document.querySelectorAll('.product__slide-item');
-
-
-function hidencontentandTabClassActiv() {
-
-	sliderImg.forEach(item => {
-		item.classList.remove('swiper-slide-active');
-	});
-}
+// 	sliderImg.forEach(item => {
+// 		item.classList.remove('swiper-slide-active');
+// 	});
+// }
 
 
-function showContent(i = 0) {
-	sliderImg[i].classList.add('swiper-slide-active');
+// function showContent(i = 0) {
+// 	sliderImg[i].classList.add('swiper-slide-active');
 
-}
-
-
-listBtn.addEventListener('click', (event) => {
-	const target = event.target;
-	if (target && target.classList.contains('product__slide-item')) {
-
-		productSlideItem.forEach((tab, i) => {
-			if (target == tab) {
-				hidencontentandTabClassActiv();
-				showContent(i);
-			}
-
-		});
-
-	}
-})
+// }
 
 
+// listBtn.addEventListener('click', (event) => {
+// 	const target = event.target;
+// 	if (target && target.classList.contains('product__slide-item')) {
 
+// 		productSlideItem.forEach((tab, i) => {
+// 			if (target == tab) {
+// 				hidencontentandTabClassActiv();
+// 				showContent(i);
+// 			}
 
+// 		});
 
-
-
-
-
+// 	}
+// })
 
 
 
 
 
-AOS.init();
+
 
 
 function header() {

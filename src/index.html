@@ -6,11 +6,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/svg" sizes="32*32" href="../src/img/logo/logo2.png">
+	<script defer src="https://kit.fontawesome.com/18da5a6cb9.js" crossorigin="anonymous"></script>
 	<title>MODERN SOLUTION</title>
 </head>
 
 <body>
-	<!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- ////////////////////////////////////////////////////// -->
 	<header class="header ">
 		<div class="header__hover"></div>
 		<div class="container">
@@ -39,7 +40,7 @@
 						</li>
 						<li class="menu__list-item">
 							<div class="contact">
-								<button class="contact__btn">
+								<button type="button" class="contact__btn">
 									Заказакть звонок
 								</button>
 							</div>
@@ -51,12 +52,11 @@
 		</div>
 	</header>
 
-	<!-- //////////////////////////////// -->
-
+	<!-- ////////////////////////////////////////////////////// -->
 
 	<main class="main">
 
-		<!-- section Top////////////////// -->
+		<!-- section Top////////////////// //////////////////////-->
 
 		<section class="top">
 			<div class="container">
@@ -68,15 +68,15 @@
 						<p class="top__content-desc">
 							Программное решение для синхронизации и обмена данными между системой 1С и интернет-магазином.
 						</p>
-						<button class="buy-btn">
+						<button type="button" class="buy-btn">
 							Заказать внедрение
 						</button>
 						<h2 class="top__content-title">Разработка сайтов интернет-магазина под ключ! </h2>
 						<p class="top__content-desc">
-							Создаём сайт, с уникальным дизайном, удобным в использовании и для
+							Создаём сайт, с уникальным дизайном, удобным в использовании, для
 							разного вида задач!
 						</p>
-						<button class="buy-btn">
+						<button type="button" class="buy-btn">
 							Заказать сайт
 						</button>
 					</div>
@@ -112,74 +112,703 @@
 
 		<section class="product">
 			<div class="container">
-				<h2 class="product__title">Возможности продукта</h2>
+				<h2 class="product__title title">Возможности продукта</h2>
 				<p class="product__desc">1С:Управление компанией» позволяют повысить эффективность работы компании за счет
 					широкого спектра инструментов для управления и продуктивной работы.</p>
+
+				<!-- 
+				<ul class="sw__list">
+					<li class="sw__item ">1</li>
+					<li class="sw__item ">2</li>
+					<li class="sw__item ">3</li>
+					<li class="sw__item ">4</li>
+					<li class="sw__item ">5</li>
+					<li class="sw__item ">6</li>
+					<li class="sw__item ">7</li>
+					<li class="sw__item ">8</li>
+					<li class="sw__item ">9</li>
+				</ul> -->
+
+
 				<div class="product__slide">
 
-					<ul class="product__slide-list">
-						<li class="product__slide-item">CRM и маркетинг</li>
-						<li class="product__slide-item">Сервис и услуги</li>
-						<li class="product__slide-item">Производство</li>
-						<li class="product__slide-item">Финансы, банк и касса</li>
-						<li class="product__slide-item">Управленческая зарплата</li>
-						<li class="product__slide-item">Складской учет</li>
-						<li class="product__slide-item">Закупка товаров</li>
-						<li class="product__slide-item">Продажи и доставка</li>
-						<li class="product__slide-item">Аналитические отчеты</li>
-					</ul>
-
+					<!-- Slider main container -->
 					<div class="swiper-container">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+							<div class="swiper-slide">CRM и маркетинг</div>
+							<div class="swiper-slide">Сервис и услуги</div>
+							<div class="swiper-slide">Производство</div>
+							<div class="swiper-slide">Финансы, банк и касса</div>
+							<div class="swiper-slide">Управленческая зарплата</div>
+							<div class="swiper-slide">Складской учет</div>
+							<div class="swiper-slide">Закупка товаров</div>
+							<div class="swiper-slide">Продажи и доставка</div>
+							<div class="swiper-slide">Аналитические отчеты</div>
 
-						<div class="swiper-container">
-
-							<div class="swiper-wrapper">
-
-								<div class="swiper-slide"> <img src="https://swiperjs.com/demos/images/nature-1.jpg" /></div>
-								<div class="swiper-slide"> <img src="https://swiperjs.com/demos/images/nature-1.jpg" /></div>
-								<div class="swiper-slide"> <img src="https://swiperjs.com/demos/images/nature-1.jpg" /></div>
-								<div class="swiper-slide"> <img src="https://swiperjs.com/demos/images/nature-1.jpg" /></div>
-								<div class="swiper-slide"> <img src="https://swiperjs.com/demos/images/nature-1.jpg" /></div>
-								<div class="swiper-slide"> <img src="https://swiperjs.com/demos/images/nature-1.jpg" /></div>
-								<div class="swiper-slide"> <img src="https://swiperjs.com/demos/images/nature-1.jpg" /></div>
-								<div class="swiper-slide"> <img src="https://swiperjs.com/demos/images/nature-1.jpg" /></div>
-								<div class="swiper-slide"> <img src="https://swiperjs.com/demos/images/nature-1.jpg" /></div>
-
-							</div>
-
-							<div class="swiper-pagination"></div>
-
-
-							<div class="swiper-button-prev"></div>
-							<div class="swiper-button-next"></div>
-
-
-							<div class="swiper-scrollbar"></div>
 						</div>
-					</div>
 
+						<div class="swiper-pagination"></div>
+
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+
+						<!-- If we need scrollbar -->
+						<!-- <div class="swiper-scrollbar"></div> -->
+					</div>
 
 				</div>
 			</div>
 		</section>
 
-		<!-- <section class="modal">
+		<!-- section Integration//////////////////////////////// -->
+		<section class="integration">
+			<div class="container">
+				<h3 class="integration__title">
+					Интеграция и совместимость
+				</h3>
+				<p class="integration__desc">
+					Программа построена на современной платформе «1С:Предприятие 8». Она позволяет работать одновременно
+					большому количеству пользователей и подключать различные системы и оборудование
+				</p>
 
-			<div class="modal__wrapper">
-				<form action="#" class="modal__form">
-					<label for="full-name">Full Name</label>
-					<input type="text" name="name" id="full-name">
+				<ul class="integration__list">
+					<li class="integration__item " data-aos="fade-right" data-aos-duration="500">
+						<div class="integration__icon">
+							<img src="../src/img/icons/integration-1.svg" alt="logo">
+						</div>
 
-				</form>
+						<h3 class="integration__subtitle">
+							1C бухгалтерия
+						</h3>
+						<p class="integration__text">
+							полноценный обмен документами и справочниками с бухгалтерией
+						</p>
+					</li>
+					<li class="integration__item " data-aos="fade-right" data-aos-duration="800">
+						<div class="integration__icon">
+							<img src="../src/img/icons/integration-2.svg" alt="logo">
+						</div>
+
+						<h3 class="integration__subtitle">
+							Web и mobile
+						</h3>
+						<p class="integration__text">
+							интеграция с мобильными приложениями,
+							web-клиент
+						</p>
+					</li>
+					<li class="integration__item " data-aos="fade-right" data-aos-duration="1100">
+						<div class="integration__icon">
+							<img src="../src/img/icons/integration-3.svg" alt="logo">
+						</div>
+
+						<h3 class="integration__subtitle">
+							Интеграция с "1C-Битрикс"
+						</h3>
+						<p class="integration__text">
+							обмен с интернет-магазином
+						</p>
+					</li>
+					<li class="integration__item " data-aos="fade-right" data-aos-duration="1400">
+						<div class="integration__icon">
+							<img src="../src/img/icons/integration-4.svg" alt="logo">
+						</div>
+
+						<h3 class="integration__subtitle">
+							Оборудование
+						</h3>
+						<p class="integration__text">
+							терминалы сбора данных, сканеры штрих-кодов и т.д.
+						</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- section for-whom/////////////////////////////////// -->
+
+		<section class="for-whom">
+
+			<div class="container">
+				<h2 class="for-whom__title">
+					Для кого подходит
+				</h2>
+				<div class="for-whom__wrapper">
+					<ul class="for-whom__list">
+						<div class="for-whom__list-item" data-aos="zoom-in-right">
+							<img src="./img/icons/user-1-1.svg" alt="icon" class="for-whom__img">
+							<h3 class="for-whom__subtitle">Производство</h3>
+							<p class="for-whom__text">Используйте эффективные инструменты для ведения производственного учета,
+								отслеживая каждую операцию и выполняя все необходимые расчеты.</p>
+						</div>
+						<div class="for-whom__list-item" data-aos="zoom-in-up">
+							<img src="./img/icons/user-1-2.svg" alt="icon" class="for-whom__img">
+							<h3 class="for-whom__subtitle">Услуги</h3>
+							<p class="for-whom__text">Ведите подробный учет всех проводимых работ с анализом эффективности.
+								Планируйте загрузку сотрудников, оборудования и других ресурсов.</p>
+						</div>
+						<div class="for-whom__list-item" data-aos="zoom-in-left">
+							<img src="./img/icons/user-1-3.svg" alt="icon" class="for-whom__img">
+							<h3 class="for-whom__subtitle">Торговля</h3>
+							<p class="for-whom__text">Автоматизируйте процесс оптовых и розничных продаж, используя подходящую
+								вам
+								схему торговли. Проводите полный анализ торговой деятельности.</p>
+						</div>
+					</ul>
+
+				</div>
+
+				<div class="for-whom__btn">
+					<button type="button" class="buy-btn buy-btn--color">
+						Получить консультацию
+					</button>
+				</div>
+
+				<div class="company-processes">
+					<div class="company-processes__wrapper">
+						<div class="company-processes__item">
+							<h2 class="company-processes__title">
+								Система помогает вам контролировать и анализировать процессы в компании.
+							</h2>
+						</div>
+						<div class="company-processes__item">
+							<div class="company-processes-card">
+								<img class="company-processes-card__icon" src="../src/img/icons/checkmark_big.svg" alt="icon">
+								<div class="company-processes-card__desc">
+									<h3 class="company-processes-card__title">Бизнес как на ладони</h3>
+									<p class="company-processes-card__text">Все данные доступны вам в любое время из любой точки
+										мира.</p>
+								</div>
+							</div>
+							<div class="company-processes-card">
+								<img class="company-processes-card__icon" src="../src/img/icons/checkmark_big.svg" alt="icon">
+								<div class="company-processes-card__desc">
+									<h3 class="company-processes-card__title">Опережение конкурентов</h3>
+									<p class="company-processes-card__text">Вы принимаете взвешенные и обоснованные
+										управленческие решения.
+										мира.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 
 
-		</section> -->
+
+
+
+
+		</section>
+
+		<!-- section about////////////////////////////////////// -->
+
+		<section class="about">
+			<div class="container">
+				<h2 class="about__title">О компании</h2>
+				<div class="about__wrapper">
+					<div class="about__inner">
+						<p><strong>OOO «MODERN SOLUTION»</strong> — официальный дистрибьютор фирмы «1С» в Республике Беларусь.
+							Наша компания
+							уже <strong>(...)</strong>
+							года специализируется на поставке, установке, внедрении и сопровождении автоматизированных систем
+							на основе платформы «1С:Предприятие».</p>
+						<p>Разработки компании «MODERN SOLUTION» признаны фирмой «1С» как продукты, совместимые с системой
+							программ
+							«1С:Предприятие».</p>
+						<p>Специалисты нашей компании обучены и сертифицированы по соответствующим направлениям и технологиям.
+							<strong>Более (...) сертификатов «1С»</strong> по различным областям деятельности. Уровень
+							подготовки
+							сотрудников
+							позволяет решать даже самые сложные задачи автоматизации.
+						</p>
+					</div>
+					<div class="about__inner">
+						<div class="about__logo">
+							<img class="logo__img" src="img/logo/logo2.png" alt="logo">
+							<span class="logo__text">MODERN SOLUTION</span>
+						</div>
+
+						<p class="representative">
+							Официальный дистрибьютор фирмы "1C" в Республике Беларусь
+						</p>
+
+					</div>
+				</div>
+
+				<div class="about-cards">
+					<div class="about-cards__wrapper">
+						<div class="cols">
+							<div class="col" ontouchstart="this.classList.toggle('hover');">
+								<div class="about-cards__container">
+									<div class="front">
+
+										<div class="front__inner">
+											<img src="./img/icons/integration-1.svg" alt="">
+										</div>
+										<!-- <div class="inner">
+											<p>Diligord</p>
+											<span>Lorem ipsum</span>
+										</div> -->
+
+									</div>
+									<div class="back">
+										<div class="inner">
+											<p>«MODERN SOLUTION» обладает соответствующим опытом и компетенциями для выпуска
+												тиражных решений на платформе «1С:Предприятие».</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col" ontouchstart="this.classList.toggle('hover');">
+								<div class="about-cards__container">
+									<div class="front">
+										<div class="front__inner">
+											<img src="./img/icons/integration-1.svg" alt="">
+										</div>
+										<!-- <div class="inner">
+											<p>Strizzes</p>
+											<span>Lorem ipsum</span>
+										</div> -->
+									</div>
+									<div class="back">
+										<div class="inner">
+											<p>Наш учебный центр и преподаватели сертифицированы фирмой «1С», и имеют право
+												обучения пользователей и программистов «1С».</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col" ontouchstart="this.classList.toggle('hover');">
+								<div class="about-cards__container">
+									<div class="front">
+										<div class="front__inner">
+											<img src="./img/icons/integration-1.svg" alt="">
+										</div>
+										<!-- <div class="inner">
+											<p>Strizzes</p>
+											<span>Lorem ipsum</span>
+										</div> -->
+									</div>
+									<div class="back">
+										<div class="inner">
+											<p>Система менеджмента качества «MODERN SOLUTION» соответствует требованиям
+												международного
+												стандарта ISO 9001:2008.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<!-- section why-us///////////////////////////////////// -->
+
+		<section class="why-us">
+			<div class="container">
+				<div class="why-us__wrapper">
+					<h2 class="why-us__title">Почему выбирают нас</h2>
+
+					<ul class="why-us__list">
+						<li class="why-us__item">
+							<img class="why-us__img" src="./img/icons/about-1.svg" alt="icon">
+							<div class="why-us__item-text">
+								<h3 class="why-us__item-subtitle">Опыт</h3>
+								<p class="why-us__item-desc">У нас накоплен опыт внедрения в различных отраслях, мы знакомы с их
+									спецификой.</p>
+							</div>
+						</li>
+						<li class="why-us__item">
+							<img class="why-us__img" src="./img/icons/about-3.svg" alt="icon">
+							<div class="why-us__item-text">
+								<h3 class="why-us__item-subtitle">Квалификация</h3>
+								<p class="why-us__item-desc">У нас накоплен опыт внедрения в различных отраслях, мы знакомы с их
+									спецификой.</p>
+							</div>
+						</li>
+						<li class="why-us__item">
+							<img class="why-us__img" src="./img/icons/about-2.svg" alt="icon">
+							<div class="why-us__item-text">
+								<h3 class="why-us__item-subtitle">Скорость</h3>
+								<p class="why-us__item-desc">У нас накоплен опыт внедрения в различных отраслях, мы знакомы с их
+									спецификой.</p>
+							</div>
+						</li>
+						<li class="why-us__item">
+							<img class="why-us__img" src="./img/icons/about-4.svg" alt="icon">
+							<div class="why-us__item-text">
+								<h3 class="why-us__item-subtitle">Надёжность</h3>
+								<p class="why-us__item-desc">У нас накоплен опыт внедрения в различных отраслях, мы знакомы с их
+									спецификой.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- section cases////////////////////////////////////// -->
+
+		<section class="cases">
+			<div class="container">
+				<h2 class="cases__title">Кейсы</h2>
+				<p class="cases__subtitle">Наше решение используют...</p>
+
+				<ul class="cases-list">
+					<li class="cases-list__item">
+						<img class="cases-list__item-img" src="./img/icons/integration-1.svg" alt="">
+						<h3 class="cases-list__item-title">Название кейса</h3>
+						<p class="cases-list__item__desc">Описание...</p>
+						<button type="button" class="cases-list__item-btn">Смотреть кейс</button>
+					</li>
+					<li class="cases-list__item">
+						<img class="cases-list__item-img" src="./img/icons/integration-1.svg" alt="">
+						<h3 class="cases-list__item-title">Название кейса</h3>
+						<p class="cases-list__item__desc">Описание...</p>
+						<button type="button" class="cases-list__item-btn">Смотреть кейс</button>
+					</li>
+					<li class="cases-list__item">
+						<img class="cases-list__item-img" src="./img/icons/integration-1.svg" alt="">
+						<h3 class="cases-list__item-title">Название кейса</h3>
+						<p class="cases-list__item__desc">Описание...</p>
+						<button type="button" class="cases-list__item-btn">Смотреть кейс</button>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!--section our-clients///////////////////////////////// -->
+
+		<section class="our-clients">
+			<div class="container">
+				<h2 class="our-clients__title">
+					Наши клиенты — компании из самых разных отраслей
+				</h2>
+				<ul class="our-clients__list">
+					<li class="our-clients__list-item" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="400">
+						<img class="our-clients__img" src="./img/icons/our-clients/industry-9.svg" alt="icon">
+						<p class="our-clients__desc">Производство одежды</p>
+					</li>
+					<li class="our-clients__list-item" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="400">
+						<img class="our-clients__img" src="./img/icons/our-clients/industry-11.svg" alt="icon">
+						<p class="our-clients__desc">Станкостроение</p>
+					</li>
+					<li class="our-clients__list-item" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="400">
+						<img class="our-clients__img" src="./img/icons/our-clients/industry-8.svg" alt="icon">
+						<p class="our-clients__desc">Производство мебели</p>
+					</li>
+					<li class="our-clients__list-item" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="600">
+						<img class="our-clients__img" src="./img/icons/our-clients/industry-7.svg" alt="icon">
+						<p class="our-clients__desc">Ремонт оргтехники</p>
+					</li>
+					<li class="our-clients__list-item" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="600">
+						<img class="our-clients__img" src="./img/icons/our-clients/industry-5.svg" alt="icon">
+						<p class="our-clients__desc">Сувенирная продукция</p>
+					</li>
+					<li class="our-clients__list-item" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="600">
+						<img class="our-clients__img" src="./img/icons/our-clients/industry-4.svg" alt="icon">
+						<p class="our-clients__desc">Проектные работы и технадзор</p>
+					</li>
+					<li class="our-clients__list-item" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
+						<img class="our-clients__img" src="./img/icons/our-clients/industry-10.svg" alt="icon">
+						<p class="our-clients__desc">Консалтинговые услуги</p>
+					</li>
+					<li class="our-clients__list-item" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
+						<img class="our-clients__img" src="./img/icons/our-clients/industry-6.svg" alt="icon">
+						<p class="our-clients__desc">Полиграфия</p>
+					</li>
+					<li class="our-clients__list-item" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
+						<img class="our-clients__img" src="./img/icons/our-clients/industry-2.svg" alt="icon">
+						<p class="our-clients__desc">Продажа косметики</p>
+					</li>
+					<li class="our-clients__list-item" data-aos="fade-down" data-aos-easing="linear"
+						data-aos-duration="1000">
+						<img class="our-clients__img" src="./img/icons/our-clients/industry-12.svg" alt="icon">
+						<p class="our-clients__desc">Продажа электроинструмента</p>
+					</li>
+					<li class="our-clients__list-item" data-aos="fade-down" data-aos-easing="linear"
+						data-aos-duration="1000">
+						<img class="our-clients__img" src="./img/icons/our-clients/industry-13.svg" alt="icon">
+						<p class="our-clients__desc">Строительные материалы</p>
+					</li>
+					<li class="our-clients__list-item" data-aos="fade-down" data-aos-easing="linear"
+						data-aos-duration="1000">
+						<img class="our-clients__img" src="./img/icons/our-clients/industry-1.svg" alt="icon">
+						<p class="our-clients__desc">Грузоперевозки</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+
+		<!--section price ///////////////////////////////////////-->
+
+		<section class="price">
+			<div class="container">
+				<h2 class="price__title">
+					Стоимость лицензии
+				</h2>
+				<p class="prices__desc">
+					Стоимость складывается из базовой лицензии «1С:Управление компанией», количества пользователей и вида
+					сервера.
+				</p>
+				<div class="price__wrapper">
+
+				</div>
+			</div>
+		</section>
+
+		<!--section technologies//////////////////////////////// -->
+
+		<section class="technologies">
+			<div class="container">
+				<h2 class="technologies__title">
+					Технология внедрения
+				</h2>
+				<p class="technologies__desc">
+					Мы используем отлаженную методику внедрения — от предпроектного обследования до сопровождения.
+				</p>
+				<div class="technologies__wrapper">
+					<ul class="technologies__list">
+						<li class="technologies__list-item ">
+							<img class="technologies__img" src="./img/icons/technologies/step-1.svg" alt="icon">
+							<img class="technologies__number" src="./img/icons/technologies/Number-1-icon.png" alt="icon">
+							<h3 class="technologies__item-title">Подготовка</h3>
+							<p class="technologies__item-desc">Изучаем особенности вашего бизнеса, принципы работы, требования
+								к системе.</p>
+						</li>
+						<li class="technologies__list-item ">
+							<img class="technologies__img" src="./img/icons/technologies/step-2.svg" alt="icon">
+							<img class="technologies__number" src="./img/icons/technologies/Number-2-icon.png" alt="icon">
+							<h3 class="technologies__item-title">Програмирование</h3>
+							<p class="technologies__item-desc">Если требуется - изменяем код под специфику вашей компании,
+								добавляем печатные формы, отчеты, меняем интерфейс</p>
+						</li>
+						<li class="technologies__list-item ">
+							<img class="technologies__img" src="./img/icons/technologies/step-2.svg" alt="icon">
+							<img class="technologies__number" src="./img/icons/technologies/Number-3-icon.png" alt="icon">
+							<h3 class="technologies__item-title">Перенос данных</h3>
+							<p class="technologies__item-desc">Переносим данные из других систем: товары, остатки, клиентов,
+								задолженность и т.д.</p>
+						</li>
+						<li class="technologies__list-item">
+							<img class="technologies__img" src="./img/icons/technologies/step-1.svg" alt="icon">
+							<img class="technologies__number" src="./img/icons/technologies/Number-4-icon.png" alt="icon">
+							<h3 class="technologies__item-title">Обучение</h3>
+							<p class="technologies__item-desc">Обучаем пользователей в группах или индивидуально</p>
+						</li>
+						<li class="technologies__list-item">
+							<img class="technologies__img" src="./img/icons/technologies/step-2.svg" alt="icon">
+							<img class="technologies__number" src="./img/icons/technologies/Number-5-icon.png" alt="icon">
+							<h3 class="technologies__item-title">Запуск</h3>
+							<p class="technologies__item-desc">Помогаем пользователям осваиваться в новой программе.Оперативно
+								отвечаем на их вопросы и находим решения</p>
+						</li>
+						<li class="technologies__list-item">
+							<img class="technologies__img" src="./img/icons/technologies/step-2.svg" alt="icon">
+							<img class="technologies__number" src="./img/icons/technologies/Number-6-icon.png" alt="icon">
+							<h3 class="technologies__item-title">Техническая поддержка</h3>
+							<p class="technologies__item-desc">Поддерживаем работоспособность
+
+								системы, консультируем пользователей, устанавливаем обновления</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- section try//////////////////////////////////////// -->
+
+		<section class="try">
+			<div class="container">
+				<h2 class="try__title">Попробуйте прямо сейчас</h2>
+				<div class="try__desc-box">
+					<p class="try__desc">
+						Вы можете познакомиться с программой самостоятельно, используя нашу облачную версию 1С.
+					</p>
+					<p class="try__desc">
+						Для этого не потребуется что-либо скачивать или устанавливать у себя
+					</p>
+					<p class="try__desc">
+						на компьютере какие-либо программы.
+					</p>
+				</div>
+
+				<div class="try__btns">
+					<div class="try__btns-inner">
+						<button type="button" class="buy-btn try__btn--free">Попробовать бесплатно</button>
+						<button type="button" class="buy-btn try__btn--introduction">Заказать внедрение</button>
+					</div>
+
+				</div>
+			</div>
+			<div class="clouds">
+				<div class="clouds__back">
+					<img class="clouds__back-img" src="./img/background/section-try/back-cloud.png" alt="cloud">
+				</div>
+				<div class="clouds__front">
+					<img class="clouds__front-img" src="./img/background/section-try/for-clound.png" alt="cloud">
+				</div>
+			</div>
+		</section>
+
+		<!--section consultation ////////////////////////////////-->
+
+		<section class="consultation">
+			<div class="container">
+				<h2 class="consultation__title">
+					Нужна помощь консультанта?
+				</h2>
+				<div class="consultation__box">
+					<div class="consultation__item">
+						<img class="consultation__img" src="./img/icons/consultation/need-help-1.svg" alt="icon">
+						<button type="button" class="consultation__btn">Задать вопрос</button>
+					</div>
+					<div class="consultation__item">
+						<img class="consultation__img" src="./img/icons/consultation/need-help-2.svg" alt="icon">
+						<a class="consultation__tel" href="tel:+375290000000">+375-29-000-00-00</a>
+						<a class="consultation__tel" href="tel:+375290000000">+375-29-000-00-00</a>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- section contacts/////////////////////////////////// -->
+
+		<section class="contacts">
+			<div class="container">
+				<div class="contacts__wrapper">
+
+					<div class="contacts__item">
+						<h2 class="contacts__title">
+							Контакты
+						</h2>
+						<ul class="contacts__list">
+							<li class="contacts__list-item">
+								<i class="contacts__icon fa-solid fa-location-dot fa-2x " style="color: red"></i>
+								<h3 class="contacts__adress">
+									Юридический адрес организации:
+								</h3>
+
+								<p class="contacts__adress-text">
+									Минск, 220114, пр. Независимости, д. 169, пом. 811
+								</p>
+							</li>
+							<li class="contacts__list-item">
+								<i class="contacts__icon fa-solid fa-phone-flip fa-2x" style="color: red"></i>
+								<h4 class="contacts__phones">Телефон</h4>
+								<a class="contacts__tel" href="tel:+375290000000">+375-29-000-00-00</a>
+
+							</li>
+							<li class="contacts__list-item">
+								<i class="contacts__icon far fa-envelope-open fa-2x" style="color: red"></i>
+								<h5 class="contacts__mail" lang="en">E-mail:</h5>
+								<a class="contacts__adress-link"
+									href="mailto:modernsolution@gmail.by">modernsolution@gmail.by</a>
+
+							</li>
+						</ul>
+					</div>
+					<div class="contacts__item">
+						<div class="contacts__item-map">
+							<script type="text/javascript" charset="utf-8" async
+								src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A739c94aadd365f67489c30e3492cad013540eac0e1483662bfa9685239d931d3&amp;width=500&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 	</main>
 
-	<footer class="footer">
 
+	<!-- footer////////////////////////////////////////////////// -->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__top">
+				<div class="footer__item">
+					<div class="logo">
+						<img class="logo__img" src="img/logo/logo2.png" alt="logo">
+						<span class="logo__text">MODERN SOLUTION</span>
+					</div>
+					<div class="representative">
+						<p class="representative__text">
+							Официальный дистрибьютор
+						</p>
+						<p class="representative__text">
+							фирмы "1C" в Республике Беларусь
+						</p>
+					</div>
+				</div>
+				<div class="footer__item">
+
+					<p class="footer__more">СМОТРИТЕ ТАКЖЕ</p>
+					<a class="footer__more-link" href="#">
+						<i class="fa-solid fa-arrow-right " style="color: red"></i>
+					</a>
+
+				</div>
+				<div class="footer__item">
+					<div class="footer-social">
+						<ul class="footer-social__list">
+							<li class="footer-social__facebook">
+								<a class="footer-social__facebook-link" href="#">
+									<img class="footer-social__facebook-img" src="./img/icons/footer/icons8-facebook.svg"
+										alt="facebook">
+								</a>
+							</li>
+							<li class="footer-social__instagram">
+								<a class="footer-social__instagram-link" href="#">
+									<img class="footer-social__instagram-img" src="./img/icons/footer/icons8-instagram.svg"
+										alt="instagram">
+								</a>
+							</li>
+							<li class="footer-social__linkedin">
+								<a class="footer-social__linkedin-link" href="#">
+									<img class="footer-social__linkedin-img" src="./img/icons/footer/icons8-linkedin.svg"
+										alt="linkedin">
+								</a>
+							</li>
+							<li class="footer-social__pinterest">
+								<a class="footer-social__pinterest-link" href="#">
+									<img class="footer-social__pinterest-img" src="./img/icons/footer/icons8-pinterest.svg"
+										alt="pinterest">
+								</a>
+							</li>
+							<li class="footer-social__telegram">
+								<a class="footer-social__telegram-link" href="#">
+									<img class="footer-social__telegram-img" src="./img/icons/footer/icons8-telegram-app.svg"
+										alt="telegram">
+								</a>
+							</li>
+							<li class="footer-social__twitter">
+								<a class="footer-social__twitter-link" href="#">
+									<img class="footer-social__twitter-img" src="./img/icons/footer/icons8-twitter.svg"
+										alt="twitter">
+								</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+
+		</div>
+		<div class="footer-bottom">
+
+			<p>Copyright &copy; 2023, All Right Reserved </p>
+		</div>
 	</footer>
 
 </body>

@@ -3,12 +3,36 @@ body {
 	font-family: 'Montserrat';
 	font-size: 16px;
    color:#000;
+	scroll-behavior: smooth;
+
  }
 .container {
 	max-width: 1220px;
 	margin: 0 auto;
 	padding: 0 10px;
   }
+
+
+
+
+  .logo{
+	gap: 8px;
+	display: flex;
+	align-items: center;
+}
+  .logo__img{
+   width: 32px;
+	height: 32px;
+
+}
+  .logo__text{
+	color: #000;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+
 
 .show{
 	display: block;
@@ -58,6 +82,14 @@ body {
 	transform: scale(1.05);
  }
  
+
+.buy-btn--color{
+	background-color: rgb(143 22 6 / 70%);
+}
+.buy-btn--color:hover{
+	background-color: rgb(223 0 0 / 77%);
+}
+
 ///Заказать звонок//////////
 
 .contact{
