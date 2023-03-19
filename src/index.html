@@ -6,13 +6,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/svg" sizes="32*32" href="../src/img/logo/logo2.png">
-	<script defer src="https://kit.fontawesome.com/18da5a6cb9.js" crossorigin="anonymous"></script>
+	<script async src="https://kit.fontawesome.com/18da5a6cb9.js" crossorigin="anonymous"></script>
 	<title>MODERN SOLUTION</title>
 </head>
 
 <body>
 	<!-- ////////////////////////////////////////////////////// -->
-	<header class="header ">
+	<header class="header">
 		<div class="header__hover"></div>
 		<div class="container">
 			<div class="header__inner">
@@ -24,23 +24,23 @@
 				<nav class="menu">
 					<ul class="menu__list">
 						<li class="menu__list-item">
-							<a class="menu__list-link" href="#">Возможности продукта</a>
+							<a class="menu__list-link" href="#product">Возможности продукта</a>
 						</li>
 						<li class="menu__list-item">
-							<a class="menu__list-link" href="#">О компании</a>
+							<a class="menu__list-link" href="#about">О компании</a>
 						</li>
 						<li class="menu__list-item">
-							<a class="menu__list-link" href="#">Кейсы</a>
+							<a class="menu__list-link" href="#cases">Кейсы</a>
 						</li>
 						<li class="menu__list-item">
-							<a class="menu__list-link" href="#">Стоимость</a>
+							<a class="menu__list-link" href="#price">Стоимость</a>
 						</li>
 						<li class="menu__list-item">
-							<a class="menu__list-link" href="#"> Контакты</a>
+							<a class="menu__list-link" href="#contacts"> Контакты</a>
 						</li>
 						<li class="menu__list-item">
 							<div class="contact">
-								<button type="button" class="contact__btn">
+								<button type="button" class="contact__btn" data-modal="modal">
 									Заказакть звонок
 								</button>
 							</div>
@@ -62,13 +62,13 @@
 			<div class="container">
 				<div class="top__wrapper">
 					<div class="top__content">
-						<h1 class="top__content-title">
+						<h1 class="top__content-title ">
 							Интеграция 1С и интернет-магазина!
 						</h1>
 						<p class="top__content-desc">
 							Программное решение для синхронизации и обмена данными между системой 1С и интернет-магазином.
 						</p>
-						<button type="button" class="buy-btn">
+						<button type="button" class="buy-btn" data-modal="modal">
 							Заказать внедрение
 						</button>
 						<h2 class="top__content-title">Разработка сайтов интернет-магазина под ключ! </h2>
@@ -76,7 +76,7 @@
 							Создаём сайт, с уникальным дизайном, удобным в использовании, для
 							разного вида задач!
 						</p>
-						<button type="button" class="buy-btn">
+						<button type="button" class="buy-btn" data-modal="modal">
 							Заказать сайт
 						</button>
 					</div>
@@ -110,7 +110,7 @@
 
 		<!-- section Product//////////////////////////////////// -->
 
-		<section class="product">
+		<section class="product" id="product">
 			<div class="container">
 				<h2 class="product__title title">Возможности продукта</h2>
 				<p class="product__desc">1С:Управление компанией» позволяют повысить эффективность работы компании за счет
@@ -149,7 +149,7 @@
 
 						</div>
 
-						<div class="swiper-pagination"></div>
+						<!-- <div class="swiper-pagination"></div> -->
 
 						<div class="swiper-button-prev"></div>
 						<div class="swiper-button-next"></div>
@@ -261,7 +261,7 @@
 				</div>
 
 				<div class="for-whom__btn">
-					<button type="button" class="buy-btn buy-btn--color">
+					<button type="button" class="buy-btn buy-btn--color" data-modal="modal">
 						Получить консультацию
 					</button>
 				</div>
@@ -305,7 +305,7 @@
 
 		<!-- section about////////////////////////////////////// -->
 
-		<section class="about">
+		<section class="about" id="about">
 			<div class="container">
 				<h2 class="about__title">О компании</h2>
 				<div class="about__wrapper">
@@ -454,7 +454,7 @@
 
 		<!-- section cases////////////////////////////////////// -->
 
-		<section class="cases">
+		<section class="cases" id="cases">
 			<div class="container">
 				<h2 class="cases__title">Кейсы</h2>
 				<p class="cases__subtitle">Наше решение используют...</p>
@@ -464,19 +464,19 @@
 						<img class="cases-list__item-img" src="./img/icons/integration-1.svg" alt="">
 						<h3 class="cases-list__item-title">Название кейса</h3>
 						<p class="cases-list__item__desc">Описание...</p>
-						<button type="button" class="cases-list__item-btn">Смотреть кейс</button>
+						<button type="button" class="cases-list__item-btn" data-modal="modal">Смотреть кейс</button>
 					</li>
 					<li class="cases-list__item">
 						<img class="cases-list__item-img" src="./img/icons/integration-1.svg" alt="">
 						<h3 class="cases-list__item-title">Название кейса</h3>
 						<p class="cases-list__item__desc">Описание...</p>
-						<button type="button" class="cases-list__item-btn">Смотреть кейс</button>
+						<button type="button" class="cases-list__item-btn" data-modal="modal">Смотреть кейс</button>
 					</li>
 					<li class="cases-list__item">
 						<img class="cases-list__item-img" src="./img/icons/integration-1.svg" alt="">
 						<h3 class="cases-list__item-title">Название кейса</h3>
 						<p class="cases-list__item__desc">Описание...</p>
-						<button type="button" class="cases-list__item-btn">Смотреть кейс</button>
+						<button type="button " class="cases-list__item-btn" data-modal="modal">Смотреть кейс</button>
 					</li>
 				</ul>
 			</div>
@@ -548,7 +548,7 @@
 
 		<!--section price ///////////////////////////////////////-->
 
-		<section class="price">
+		<section class="price" id="price">
 			<div class="container">
 				<h2 class="price__title">
 					Стоимость лицензии
@@ -641,8 +641,9 @@
 
 				<div class="try__btns">
 					<div class="try__btns-inner">
-						<button type="button" class="buy-btn try__btn--free">Попробовать бесплатно</button>
-						<button type="button" class="buy-btn try__btn--introduction">Заказать внедрение</button>
+						<button type="button" class="buy-btn try__btn--free" data-modal="modal">Попробовать бесплатно</button>
+						<button type="button" class="buy-btn try__btn--introduction" data-modal="modal">Заказать
+							внедрение</button>
 					</div>
 
 				</div>
@@ -667,7 +668,7 @@
 				<div class="consultation__box">
 					<div class="consultation__item">
 						<img class="consultation__img" src="./img/icons/consultation/need-help-1.svg" alt="icon">
-						<button type="button" class="consultation__btn">Задать вопрос</button>
+						<button type="button" class="consultation__btn" data-modal="modal">Задать вопрос</button>
 					</div>
 					<div class="consultation__item">
 						<img class="consultation__img" src="./img/icons/consultation/need-help-2.svg" alt="icon">
@@ -681,7 +682,7 @@
 
 		<!-- section contacts/////////////////////////////////// -->
 
-		<section class="contacts">
+		<section class="contacts" id="contacts">
 			<div class="container">
 				<div class="contacts__wrapper">
 
@@ -788,12 +789,7 @@
 										alt="telegram">
 								</a>
 							</li>
-							<li class="footer-social__twitter">
-								<a class="footer-social__twitter-link" href="#">
-									<img class="footer-social__twitter-img" src="./img/icons/footer/icons8-twitter.svg"
-										alt="twitter">
-								</a>
-							</li>
+
 						</ul>
 					</div>
 
@@ -811,8 +807,34 @@
 		</div>
 	</footer>
 
+	<div class="modal fade">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<form action="#" class="form" method="post">
+					<h2 class="form__title"></h2>
+					<div class="form__close"><img src="./img/icons/modal/cross.svg" alt="icon" class="modal__close-img">
+					</div>
+					<label for="name">Ваше имя</label>
+					<input type="text" id="name" name="name">
+
+					<label for="phone">Телефон</label>
+					<input type="tel" id="phone" name="phone">
+
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email">
+
+					<label for="text">Комментарий</label>
+					<textarea id="text" name="text"></textarea>
+
+					<button type="submit">Отправить</button>
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
 </body>
-
-
 
 </html>

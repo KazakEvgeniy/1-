@@ -3,6 +3,9 @@ import './index.scss';
 import AOS from 'aos';
 import Swiper from 'swiper/bundle';
 import SwiperCore, { Navigation, Pagination } from 'swiper/core';
+import { modal } from './modules/_modal';
+
+modal();
 
 
 AOS.init();
@@ -102,7 +105,7 @@ function header() {
 
 	window.addEventListener('scroll', () => {
 		let scroll = window.pageYOffset;
-		console.log(scroll);
+
 		if (scroll == 0) {
 			header.classList.remove('header__scroll');
 			headerHover.style.transform = 'translateY(-100px)';
@@ -121,3 +124,6 @@ function header() {
 }
 
 header();
+
+
+

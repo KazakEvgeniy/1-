@@ -1,8 +1,5 @@
 
-
-
-//header-logo/////////////////////////////////////////
-
+//header/////////////////////////////////////////
 
 .header{
 	position: fixed;
@@ -72,7 +69,6 @@
 
 .top{
 	position: relative;
-	// background-image: url('');
 	min-height:100vh ;
 	background-color: #ffd63b;
 	background-repeat: no-repeat;
@@ -84,15 +80,15 @@
 	padding-top: 10%;
    display: flex;
    gap: 1em;
-
 }
 
 .top__content{
 	flex: 0 1 40%;
 }
 .top__content-title{
-	font-size: 32px;
-	margin: 15px 0;
+	@extend %roboto-700;
+	font-size: 36px;
+	margin: 15px 0 25px;
 
 }
 .top__content-desc{
@@ -173,19 +169,14 @@
 }
 
 .swiper-slide{
-	background-color: rgb(116 19 19 / 27%);
+	background-color: rgba(253, 253, 253, 0.592);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-size: 30px;
 	font-weight: bold;
 }
-.swiper-button-next{
-right: - 60px;
-}
-.swiper-button-prev{
-left:  -60px;
-}
+
 
 
 /////Integration//////////////
@@ -427,11 +418,12 @@ margin-bottom: 25px;
 	margin-right: 5px;
 }
 .representative{
-	// text-align: center;
 	color: #58595b;
 	line-height: 22px;
 }
-
+.about__inner .representative{
+	text-align: center;
+}
 
 
 
@@ -587,14 +579,14 @@ margin-bottom: 25px;
 ///why-us///////////////////////
 .why-us{
 	padding: 100px 0 150px;
-	background-color: rgb(228 228 228 / 53%);
+	background-color: rgba(205, 205, 205, 0.53);
 
 }
 .why-us__wrapper{
-	box-shadow:  0px 16px 12px -3px rgb(147 96 96 / 96%), -3px 0px 15px -3px rgb(106 44 44 / 40%);
+	box-shadow: 0px 0px 12px -3px rgba(249, 236, 236, 0.96), -3px 0px 15px -3px rgba(0, 0, 0, 0.4);
 	padding: 100px 25px;
 	border-radius: 25px;
-	border: 8px solid #682e2e26;
+	border: 5px solid rgb(0 0 0 / 15%);
 	background-color: #fff;
 }
 .why-us__title{
@@ -857,9 +849,10 @@ background-color: #fff;
 	position: absolute;
    width: 100%;
 }
-
+.clouds__front-img{
+	top: 10px;
+}
 .clouds__back-img{
-	position: absolute;
 	top: -60px;
 	
 }
