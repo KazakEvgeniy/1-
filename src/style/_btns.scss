@@ -12,6 +12,11 @@
 	opacity: 0;
 	transform: scale(0);
 	}
+
+	.contact--show{
+		opacity: 1;
+		transform: scale(1);
+	}
 	
 	 .contact__btn{
 		@extend %roboto-700;

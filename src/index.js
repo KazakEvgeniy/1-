@@ -6,9 +6,79 @@ import SwiperCore, { Navigation, Pagination } from 'swiper/core';
 import { modal } from './modules/_modal';
 
 modal();
-
-
 AOS.init();
+
+
+const headerBox = document.querySelector('.header__box'),
+	header = document.querySelector('.header');
+
+window.addEventListener('scroll', () => {
+
+	let scroll = window.pageYOffset;
+	if (scroll === 0) {
+		headerBox.classList.remove('header__box--hide');
+		header.classList.remove('header--top');
+	} else {
+		headerBox.classList.add('header__box--hide');
+		header.classList.add('header--top');
+	}
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 SwiperCore.use([Navigation, Pagination]);
@@ -91,39 +161,6 @@ const swiper = new Swiper('.swiper-container', {
 // })
 
 
-
-
-
-
-
-
-function header() {
-	const header = document.querySelector('.header'),
-		contact = document.querySelector('.contact'),
-		headerHover = document.querySelector('.header__hover'),
-		menuList = document.querySelector('.menu__list');
-
-	window.addEventListener('scroll', () => {
-		let scroll = window.pageYOffset;
-
-		if (scroll == 0) {
-			header.classList.remove('header__scroll');
-			headerHover.style.transform = 'translateY(-100px)';
-			menuList.style.right = '-185px';
-			contact.style.opacity = '0';
-			contact.style.transform = 'scale(0)';
-		}
-		else if (scroll > 0) {
-			header.classList.add('header__scroll');
-			headerHover.style.transform = 'translateY(0px)';
-			menuList.style.right = '0px';
-			contact.style.opacity = '1';
-			contact.style.transform = 'scale(1)';
-		}
-	});
-}
-
-header();
 
 
 
