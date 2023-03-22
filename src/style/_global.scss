@@ -1,6 +1,6 @@
 
 :root {
-	@extend %quicksand-400;
+	@extend %Montserrat-400;
 	font-size: 16px;
    color: $main-color;
    scroll-behavior: smooth;
@@ -17,6 +17,7 @@
 	gap: 8px;
 	display: flex;
 	align-items: center;
+	z-index: 200;
 }
   .logo__img{
    width: 32px;
@@ -26,7 +27,7 @@
   .logo__text{
 	color: #000;
 	font-size: 20px;
-	font-weight: bold;
+	@extend %Montserrat-500 ;
 }
 
 
