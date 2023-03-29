@@ -9,8 +9,7 @@ modal();
 AOS.init();
 
 
-const headerBox = document.querySelector('.header__box'),
-	menu = document.querySelector('.menu'),
+const menu = document.querySelector('.menu'),
 	headerContacts = document.querySelector('.header__contacts'),
 	menuList = document.querySelector('.menu__list'),
 	menuListLink = document.querySelectorAll('.menu__list-link'),
@@ -18,17 +17,14 @@ const headerBox = document.querySelector('.header__box'),
 	header = document.querySelector('.header');
 
 
-
-
-
 window.addEventListener('scroll', () => {
 
 	let scroll = window.pageYOffset;
 	if (scroll === 0) {
 
-		// headerBox.classList.remove('header__box--hide');
+
 		header.classList.remove('header--top');
-		headerWrapper.classList.add('header__wrapper--after');
+		headerWrapper.classList.add('header__wrapper--line');
 
 		menuListLink.forEach(link => link.classList.remove('menu__list-link--size'));
 		menu.classList.remove('menu--top');
@@ -37,9 +33,9 @@ window.addEventListener('scroll', () => {
 
 	} else {
 
-		// headerBox.classList.add('header__box--hide');
+
 		header.classList.add('header--top');
-		headerWrapper.classList.remove('header__wrapper--after');
+		headerWrapper.classList.remove('header__wrapper--line');
 
 		menu.classList.add('menu--top');
 		headerContacts.classList.add('header__contacts--top');
@@ -52,93 +48,32 @@ window.addEventListener('scroll', () => {
 
 
 
+// slider Swiper
 
+const menuPagination = ['Сервис и услуги ', 'Производство ', 'Финансы, банк и касса ', 'Управленческая зарплата ', 'Складской учет ', 'Закупка товаров',];
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-SwiperCore.use([Navigation, Pagination]);
-
-
-
-const swiper = new Swiper('.swiper-container', {
-	// Optional parameters
-	direction: 'horizontal',
+const mySwiper = new Swiper('.swiper-container', {
+	slidesPerView: 3,
+	centeredSlides: true,
 	loop: true,
 
-	// If we need pagination
 	pagination: {
 		el: '.swiper-pagination',
 		type: 'bullets',
-		clickable: true
-		// bulletActiveClass: 'act'
+		clickable: true,
+		renderBullet: function (index, className) {
+
+			return `<span class='${className}'> ${menuPagination[index]} </span>`
+
+		},
 	},
-	effect: 'cube',
-	// cubeEffect: {
-	// 	slideShadows: false,
-	// },
-	// Navigation arrows
+
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
 	},
+})
 
-	// And if we need scrollbar
-	scrollbar: {
-		el: '.swiper-scrollbar',
-
-	},
-
-});
 
 
 

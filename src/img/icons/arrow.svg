@@ -5,7 +5,7 @@
 <style type="text/css">
 	.st0{display:none;}
 	.st1{display:inline;}
-	.st2{fill:#F7F6F3;}
+	.st2{fill:z;}
 	.st3{display:inline;fill:#1C1C1B;}
 	.st4{fill:#FFD63B;stroke:#FFFFFF;stroke-width:3;stroke-linejoin:bevel;stroke-miterlimit:10;}
 	.st5{fill:#FFFFFF;}
@@ -53,7 +53,7 @@
 	.st47{fill:none;stroke:#F7F6F3;stroke-width:2;stroke-miterlimit:10;}
 	.st48{fill:#FF9A22;stroke:#FF9A22;stroke-width:2;stroke-miterlimit:10;}
 	.st49{fill:#F7F6F3;stroke:#231F20;stroke-width:2;stroke-miterlimit:10;}
-	.st50{fill:none;stroke:#FD4741;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st50{fill:none;stroke:#FFBC05;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st51{fill:none;stroke:#D1D3D4;stroke-width:1.7678;stroke-miterlimit:10;}
 	.st52{fill:none;stroke:#F23030;stroke-width:4;stroke-miterlimit:10;}
 	.st53{fill:#F23030;}
