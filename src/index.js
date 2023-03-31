@@ -50,22 +50,17 @@ window.addEventListener('scroll', () => {
 
 // slider Swiper
 
-const menuPagination = ['Сервис и услуги ', 'Производство ', 'Финансы, банк и касса ', 'Управленческая зарплата ', 'Складской учет ', 'Закупка товаров',];
+
 
 const mySwiper = new Swiper('.swiper-container', {
-	slidesPerView: 3,
+	slidesPerView: 5,
 	centeredSlides: true,
 	loop: true,
 
 	pagination: {
 		el: '.swiper-pagination',
 		type: 'bullets',
-		clickable: true,
-		renderBullet: function (index, className) {
 
-			return `<span class='${className}'> ${menuPagination[index]} </span>`
-
-		},
 	},
 
 	navigation: {
@@ -73,6 +68,8 @@ const mySwiper = new Swiper('.swiper-container', {
 		prevEl: '.swiper-button-prev',
 	},
 })
+
+
 
 
 
