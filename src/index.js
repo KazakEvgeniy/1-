@@ -70,6 +70,45 @@ const mySwiper = new Swiper('.swiper-container', {
 })
 
 
+// const casesList = ['Сервис и услуги ', 'Производство ', 'Финансы, банк и касса '];
+
+
+
+const casesList = document.querySelectorAll('.cases__list-item');
+
+const cases = new Swiper('.cases-slide', {
+	slidesPerView: 1,
+	centeredSlides: true,
+	loop: true,
+	autoplay: {
+		delay: 1000,
+	},
+	pagination: {
+		el: '.cases-pagination',
+		type: 'bullets',
+		clickable: true,
+		renderBullet: function (index, className) {
+
+
+			return `
+			
+					<li class="${className}">
+					 ${casesList[index].innerHTML}
+					</li>
+					
+			`
+
+
+		},
+	},
+
+
+
+
+})
+
+casesList.forEach(item => item.remove());
+
 
 
 
