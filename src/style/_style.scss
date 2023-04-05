@@ -379,7 +379,7 @@
 /////Integration//////////////
 
 .integration{
-	padding: 100px 0 100px;
+	padding: 100px 0 50px;
 }
 .integration__title{
 	position: relative;
@@ -437,7 +437,7 @@
 }
 .integration-cards__desc{
 	@extend %Montserrat-500;
-	color: #000;
+   line-height: 1.4em; 
 }
 
 // marketplace
@@ -455,17 +455,19 @@
 }
 .marketplace__wrapper{
 	position: relative;
+	display: flex;
+	justify-content: space-between !important;
 }
 
 .swiper-container{
-	width: 80%;
+	max-width: 90%;
+	// margin-left: 25px;
 }
 
 .swiper-slide{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 150px;
 }
 
 .swiper-slide__img{
@@ -485,12 +487,12 @@
 // order
 
 .order{
-	background-color: #1f5e1288;
-	padding: 50px 0 240px;
-	background-size: contain;
-	background-size:  100% auto;
-	background-position: center center;
-	background-image: url('../img/background/order/orderBg.jpg');
+	padding: 50px 0 180px;
+	background-size: cover;
+	background-size:  auto;
+	background-position: left center,right center;
+	background-repeat: no-repeat;
+	background-image: url('../img/background/order/LeftBg2.png'),url('../img/background/order/RightBg2.png');
 }
 
 .order__title{
@@ -570,10 +572,8 @@
 
 .order-list__item-desc{
 	position: absolute;
-	color: #545454;;
 	font-size: 14px;
-	height: 100px;
-	@extend %Montserrat-700;
+	@extend %Montserrat-500;
 }
 
 .order-list__item:nth-child(even)>.order-list__item-desc {
@@ -604,20 +604,10 @@
 	color: #545454;
 }
 
-.swiper-slide {
-	display: flex;
-	width: 100%;
-	justify-content: space-between;
-	align-items:flex-start;
-}
-.cases-slide__logo{
-	max-width: 30%;
-}
 .cases-slide__item{
 	max-width: 50%;
 }
 .cases-slide__title{
-
 	position: relative;
 	@extend %Montserrat-700;
 	margin-bottom: 15px;
@@ -629,8 +619,16 @@
 	width: 100%;
 	height: 2px;
 	background-color: #000000;
-	bottom: -8px;
+	bottom: -10px;
 }
+.cases__slide-box{
+	display: flex;
+	justify-content: space-between;
+}
+.cases-slide__logo{
+	max-height: 40px;
+}
+
 
 .cases__pagination-box {
 	margin-bottom: 80px;
@@ -666,7 +664,137 @@ grid-template-columns: repeat(3,1fr);
 }
 
 
+.offer{
+	padding: 50px 0;
+}
+.offer__title{
+	@extend %Montserrat-700;
+	font-size: 45px;
+	margin-bottom: 80px;
+   text-align: center;
+	color: #545454;
+}
+.offer-cards{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap: 25px;
+	
+}
+.offer-cards__item{
+	border: 3px solid rgb(213, 213, 213);
+	border-radius: 5px;
+	padding: 25px;
+}
+.offer-cards__img{
+	object-fit: cover;
+   height: 180px;
+	max-width: 250px;
+	margin: 0 auto;
+}
+.offer-cards__title{
+	text-align: center;
+	@extend %Montserrat-700;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
 
+.offer-cards__desc{
+	@extend %Montserrat-500;
+	text-align: center;
+	height: 100px;
+	margin-bottom: 15px;
+	overflow-y: auto;
+}
+
+.offer-card__list-item{
+	position: relative;
+	margin-bottom: 10px;
+	padding-left: 30px;
+
+}
+
+.offer-card__list-item--plus{
+	@extend %Montserrat-500;
+
+}
+
+.offer-card__list-item--plus::before{
+	position: absolute;
+   content: '';
+	background: url('../img/icons/offer/plus.png') no-repeat;
+	background-size: cover;
+	left: 0;
+	height: 20px; 
+	width: 20px;
+}
+
+.offer-card__list-item--minus{
+	@extend %Montserrat-500;
+	color: #858181;
+}
+
+.offer-card__list-item--minus::before{
+	position: absolute;
+   content: '';
+	background: url('../img/icons/offer/minus.png') no-repeat;
+	background-size: cover;
+	left: 0;
+	height: 21px; 
+	width: 21px;
+}
+
+.stages{
+	padding: 50px 0 100px;
+}
+
+.stages__title{
+	@extend %Montserrat-700;
+	font-size: 45px;
+	margin-bottom: 80px;
+	text-align: center;
+	color: #545454;
+	max-width: 480px;
+	margin: 0 auto;
+	padding-bottom: 80px;
+}
+
+.stages-list{
+	display: grid;
+	grid-template: repeat(2, 1fr)/repeat(3, auto); 
+	grid-gap: 25px;
+}
+
+.stages-list__item-num{
+	font-size: 40px;
+	color: #f6b81a;
+	@extend %Montserrat-700;
+	margin-bottom: 15px;
+}
+.stages-list__item-title{
+	@extend %Montserrat-700;
+	font-size: 18px;
+
+	margin-bottom: 15px;
+}
+.stages-list__desc-item{
+	position: relative;
+	@extend %Montserrat-500;
+	line-height: 1.5em;
+	padding-left: 15px;
+}
+
+.stages-list__desc-item::after{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 8px;
+	width: 6px;
+	height: 6px;
+	background-color: #5d5b5b;
+}
+.stages-list__desc-item:not(:last-child){
+   margin-bottom: 5px;
+}
 // for-whom//////////////////////////////////
 
 .for-whom{
