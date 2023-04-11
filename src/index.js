@@ -8,6 +8,12 @@ import { modal } from './modules/_modal';
 modal();
 AOS.init();
 
+const menuBurger = document.querySelector('.menu-burger');
+
+
+menuBurger.addEventListener('click', () => {
+	menuList.classList.toggle('header-mobile__menu');
+})
 
 const menu = document.querySelector('.menu'),
 	headerContacts = document.querySelector('.header__contacts'),
@@ -15,6 +21,20 @@ const menu = document.querySelector('.menu'),
 	menuListLink = document.querySelectorAll('.menu__list-link'),
 	headerWrapper = document.querySelector('.header__wrapper'),
 	header = document.querySelector('.header');
+
+
+// menuList.forEach(item => {
+
+// 	item.addEventListener('click', () => {
+// 		menuList.classList.toggle('header-mobile__menu');
+// 	})
+// })
+menuListLink.forEach(item => {
+
+	item.addEventListener('click', () => {
+		menuList.classList.toggle('header-mobile__menu');
+	})
+})
 
 
 window.addEventListener('scroll', () => {
@@ -52,25 +72,48 @@ window.addEventListener('scroll', () => {
 
 
 
-const mySwiper = new Swiper('.swiper-container', {
-	slidesPerView: 5,
+const mySwiper = new Swiper('.marketplace-slider', {
+	slidesPerView: 1,
 	centeredSlides: true,
 	loop: true,
-
-	pagination: {
-		el: '.swiper-pagination',
-		type: 'bullets',
-
-	},
-
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
 	},
+
+	speed: 500,
+
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+			centeredSlides: true,
+			autoplay: {
+				enabled: true,
+				delay: 1200,
+			},
+		},
+		420: {
+			centeredSlides: false,
+			slidesPerView: 2,
+		},
+		620: {
+			slidesPerView: 3,
+			spaceBetween: 30,
+
+		},
+		960: {
+			slidesPerView: 4,
+			centeredSlides: false,
+		},
+		1020: {
+			slidesPerView: 5,
+
+		},
+	},
 })
 
 
-// const casesList = ['Сервис и услуги ', 'Производство ', 'Финансы, банк и касса '];
+
 
 
 
@@ -81,9 +124,9 @@ const cases = new Swiper('.cases-slide', {
 	centeredSlides: true,
 	allowTouchMove: false,
 	loop: true,
-	// autoplay: {
-	// 	delay: 2000,
-	// },
+	autoplay: {
+		delay: 2000,
+	},
 	pagination: {
 		el: '.cases-pagination',
 		type: 'bullets',
@@ -92,11 +135,11 @@ const cases = new Swiper('.cases-slide', {
 
 
 			return `
-			
+
 					<li class="${className}">
 					 ${casesList[index].innerHTML}
 					</li>
-					
+
 			`
 
 
@@ -158,6 +201,75 @@ casesList.forEach(item => item.remove());
 // })
 
 
+// let myClass = document.querySelectorAll('.myClass');
+
+
+// function autoHight(itemClass) {
+// 	let allItemsHight = [];
+
+// 	const elementClasses = document.querySelectorAll(`.${itemClass}`);
+
+// 	elementClasses.forEach(item => {
+
+// 		allItemsHight.push(item.offsetHeight);
+
+// 	})
+// 	const highestAltitude = Math.max(...allItemsHight);
+
+// 	elementClasses.forEach(item => {
+
+// 		item.style.height = highestAltitude + 'px';
+
+// 	})
+
+// }
+
+
+// autoHight('offer-cards__item');
 
 
 
+
+const offerPaginationItems = document.querySelectorAll('.offer-pagination__item');
+
+const swiper = new Swiper(".offer-slider", {
+	loop: true,
+
+	autoplay: {
+		delay: 2000,
+	},
+
+	breakpoints: {
+		320: {
+			enabled: true,
+			slidesPerView: 1,
+
+		},
+		768: {
+			enabled: false,
+			slidesPerView: 3,
+			spaceBetween: 30,
+			allowTouchMove: false,
+
+		},
+	},
+
+	pagination: {
+		el: '.offer-pagination',
+		type: 'bullets',
+		clickable: true,
+		bulletClass: 'offer__swiper-pagination-bullet',
+		bulletActiveClass: 'offer__swiper-pagination-bullet-active',
+
+		renderBullet: function (index, className) {
+
+			return `
+					<li class="${className}">
+					 ${offerPaginationItems[index].innerHTML}
+					</li>
+			`
+		},
+	},
+
+});
+offerPaginationItems.forEach(item => item.remove());

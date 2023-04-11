@@ -29,9 +29,9 @@
 	cursor: pointer;
 }
 .form__title {
+	@extend %Montserrat-700;
 	text-align: center;
-	// @extend %roboto-700 ;
-	font-size: 22px;
+	font-size: 24px;
 	margin-bottom: 35px;
 	text-transform: uppercase;
 }
@@ -72,12 +72,12 @@
 }
 
 .form [type="submit"]{
-	// @extend %roboto-700;
-	background-color: #ffd63b;
+	@extend %Montserrat-500;
+	background-color: #f6b81a;
 	display: block;
 	margin: 0 auto;
-	padding: 15px 55px;
-	border-radius: 25px;
+	padding: 10px 35px;
+	border-radius: 10px;
 	border: none;
 	cursor: pointer;
 	box-shadow: 0 0 10px #080805;
