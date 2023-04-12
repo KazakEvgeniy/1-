@@ -1,16 +1,9 @@
  
 
-// 320 px — Мобильные устройства (портретная ориентация);
-// 480 px — Мобильные устройства (альбомная ориентация);
-// 600 px — Небольшие планшеты;
-// 768 px — Планшеты (портретная ориентация);
-// 1024 px — Планшеты (альбомная ориентация)/Нетбуки;
-// 1280 px и более — PC.
 
 @media (max-width:1460px){
 	.order{
 		background-image: none;
-		// padding: 50px 0 100px;
 	}
 	
 }
@@ -100,7 +93,10 @@
 	gap: 15px;
 	transition: all .5s;
 }
-
+.menu__list-item--btn {
+	display: block;
+	padding-left: 40px;
+}
 .menu__list-link{
 	padding: 10px  45px;
 }
@@ -466,7 +462,7 @@ font-weight: 500 ;
    max-width: unset;
 	border-radius: none;
 	box-shadow:unset;
-	padding: 40px 15px;
+	padding: 15px 15px 40px;
 }
 .contacts__map{
 	position: relative;
@@ -575,13 +571,19 @@ font-weight: 500 ;
 }
 .footer__top {
 	flex-direction: column;
-	align-items: start;
 }
-.footer__item:nth-child(1){
-	margin-bottom: 25px;
+.footer-social__list {
+	gap: 10px;
 }
-.footer-bottom {
-	padding: 15px 0;
+.footer__top .logo{
+	margin-bottom: 15px;
+}
+.footer__top .logo .logo__img{
+	height: 30px;
+	width: 30px;
+}
+.footer__top .logo .logo__text{
+  font-size: 18px;
 }
 }
 @media (max-width:420px){

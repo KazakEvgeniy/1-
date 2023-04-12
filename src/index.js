@@ -3,74 +3,107 @@ import './index.scss';
 import AOS from 'aos';
 import Swiper from 'swiper/bundle';
 import SwiperCore, { Navigation, Pagination } from 'swiper/core';
-import { modal } from './modules/_modal';
-
-modal();
 AOS.init();
 
-const menuBurger = document.querySelector('.menu-burger');
+
+modal();
 
 
-menuBurger.addEventListener('click', () => {
-	menuList.classList.toggle('header-mobile__menu');
-})
+
+function modal() {
+
+	const btns = document.querySelectorAll('[data-modal="modal"]'),
+		modal = document.querySelector('.modal'),
+		closeModal = document.querySelector('.form__close'),
+		formTitle = document.querySelector('.form__title');
+
+	btns.forEach(btn => {
+		btn.addEventListener('click', (e) => {
+			const target = e.target;
+			formTitle.innerText = target.innerText;
+			modal.classList.add('show');
+			modal.classList.remove('hide');
+
+		});
+
+	});
+
+
+	function closeModalWindow() {
+		modal.classList.add('hide');
+		modal.classList.remove('show');
+	}
+
+
+	modal.addEventListener('click', (e) => {
+		if (e.target === modal) {
+			closeModalWindow();
+		}
+	});
+
+
+	closeModal.addEventListener('click', closeModalWindow);
+
+
+	document.addEventListener('keydown', (e) => {
+
+		if (e.code === 'Escape' && modal.classList.contains('show')) {
+			closeModalWindow();
+		}
+	});
+
+
+}
+
 
 const menu = document.querySelector('.menu'),
 	headerContacts = document.querySelector('.header__contacts'),
 	menuList = document.querySelector('.menu__list'),
 	menuListLink = document.querySelectorAll('.menu__list-link'),
 	headerWrapper = document.querySelector('.header__wrapper'),
-	header = document.querySelector('.header');
+	header = document.querySelector('.header'),
+	section = document.querySelectorAll('section[id]'),
+	menuBurger = document.querySelector('.menu-burger');
 
 
-// menuList.forEach(item => {
 
-// 	item.addEventListener('click', () => {
-// 		menuList.classList.toggle('header-mobile__menu');
-// 	})
-// })
-menuListLink.forEach(item => {
+menuBurger.addEventListener('click', () => {
+	menuList.classList.toggle('header-mobile__menu');
+})
 
+
+menuListLink.forEach((item, i) => {
 	item.addEventListener('click', () => {
 		menuList.classList.toggle('header-mobile__menu');
+		section[i].style.paddingTop = 70 + 'px';
+		section[i].previousElementSibling.style.paddingBottom = 0 + 'px';
 	})
 })
 
 
 window.addEventListener('scroll', () => {
-
 	let scroll = window.pageYOffset;
 	if (scroll === 0) {
-
-
 		header.classList.remove('header--top');
 		headerWrapper.classList.add('header__wrapper--line');
-
 		menuListLink.forEach(link => link.classList.remove('menu__list-link--size'));
 		menu.classList.remove('menu--top');
 		headerContacts.classList.remove('header__contacts--top');
 		menuList.classList.remove('menu__list--top');
-
 	} else {
-
-
 		header.classList.add('header--top');
 		headerWrapper.classList.remove('header__wrapper--line');
-
 		menu.classList.add('menu--top');
 		headerContacts.classList.add('header__contacts--top');
 		menuList.classList.add('menu__list--top');
 		menuListLink.forEach(link => link.classList.add('menu__list-link--size'));
-
 	}
 
 });
 
 
 
-// slider Swiper
-
-
+// marketplace-slider
 
 const mySwiper = new Swiper('.marketplace-slider', {
 	slidesPerView: 1,
@@ -115,7 +148,7 @@ const mySwiper = new Swiper('.marketplace-slider', {
 
 
 
-
+// cases-slide
 
 const casesList = document.querySelectorAll('.cases__list-item');
 
@@ -133,7 +166,6 @@ const cases = new Swiper('.cases-slide', {
 		clickable: true,
 		renderBullet: function (index, className) {
 
-
 			return `
 
 					<li class="${className}">
@@ -142,11 +174,8 @@ const cases = new Swiper('.cases-slide', {
 
 			`
 
-
 		},
 	},
-
-
 
 
 })
@@ -154,81 +183,7 @@ const cases = new Swiper('.cases-slide', {
 casesList.forEach(item => item.remove());
 
 
-
-
-
-// function menuSliderRemove() {
-// 	let menuLinkActive = document.querySelectorAll('.menu__link._active');
-// 	if (menuLinkActive) {
-// 		menuLinks.classList.remove('_active');
-// 	}
-// }
-
-// swiper.init();
-
-// const listBtn = document.querySelector('.product__slide-list');
-// const sliderImg = document.querySelectorAll('.swiper-slide');
-// const productSlideItem = document.querySelectorAll('.product__slide-item');
-
-
-// function hidencontentandTabClassActiv() {
-
-// 	sliderImg.forEach(item => {
-// 		item.classList.remove('swiper-slide-active');
-// 	});
-// }
-
-
-// function showContent(i = 0) {
-// 	sliderImg[i].classList.add('swiper-slide-active');
-
-// }
-
-
-// listBtn.addEventListener('click', (event) => {
-// 	const target = event.target;
-// 	if (target && target.classList.contains('product__slide-item')) {
-
-// 		productSlideItem.forEach((tab, i) => {
-// 			if (target == tab) {
-// 				hidencontentandTabClassActiv();
-// 				showContent(i);
-// 			}
-
-// 		});
-
-// 	}
-// })
-
-
-// let myClass = document.querySelectorAll('.myClass');
-
-
-// function autoHight(itemClass) {
-// 	let allItemsHight = [];
-
-// 	const elementClasses = document.querySelectorAll(`.${itemClass}`);
-
-// 	elementClasses.forEach(item => {
-
-// 		allItemsHight.push(item.offsetHeight);
-
-// 	})
-// 	const highestAltitude = Math.max(...allItemsHight);
-
-// 	elementClasses.forEach(item => {
-
-// 		item.style.height = highestAltitude + 'px';
-
-// 	})
-
-// }
-
-
-// autoHight('offer-cards__item');
-
-
-
+// offer-slider
 
 const offerPaginationItems = document.querySelectorAll('.offer-pagination__item');
 
@@ -272,4 +227,5 @@ const swiper = new Swiper(".offer-slider", {
 	},
 
 });
+
 offerPaginationItems.forEach(item => item.remove());
