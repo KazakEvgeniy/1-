@@ -28,7 +28,7 @@
 	gap: 8px;
 	display: flex;
 	align-items: center;
-	z-index: 200;
+	z-index: 100;
 }
   .logo__img{
    width: 32px;
@@ -60,19 +60,7 @@
 	width: 100%;
 	
 }
-.header-mobile{
-	display: none;
-	align-items: center;
-	gap: 25px;
-}
-.header-mobile__img{
-	height: 40px;
-	width: 40px;
-}
 
-.header-mobile__menu{
-	right:  0 !important;
-}
 .menu-burger{
 	display: block;
 	position: relative;
