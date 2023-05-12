@@ -237,19 +237,20 @@
 
 				<ul class="offer-pagination__list">
 					<li class="offer-pagination__item">
-						<img class="offer-pagination__img" src="./img/icons/offer/offer-1.png" alt="icon">
+						<img class="offer-pagination__img" src="./img/icons/offer/offer-1.png" alt="Базовая синхронизация">
 						<p class="offer-pagination__desc">
 							Базовая синхронизация
 						</p>
 					</li>
 					<li class="offer-pagination__item">
-						<img class="offer-pagination__img" src="./img/icons/offer/offer-2.png" alt="icon">
+						<img class="offer-pagination__img" src="./img/icons/offer/offer-2.png"
+							alt="Расширенная синхронизация">
 						<p class="offer-pagination__desc">
 							Расширенная синхронизация
 						</p>
 					</li>
 					<li class="offer-pagination__item">
-						<img class="offer-pagination__img" src="./img/icons/offer/offer-3.png" alt="icon">
+						<img class="offer-pagination__img" src="./img/icons/offer/offer-3.png" alt="Полная синхронизация">
 						<p class="offer-pagination__desc">
 							Полная синхронизация
 						</p>
@@ -264,7 +265,7 @@
 					<div class="swiper-wrapper ">
 						<div class="swiper-slide ">
 							<div class="offer-cards__item">
-								<img class="offer-cards__img" src="./img/icons/offer/offer-1.png" alt="offer">
+								<img class="offer-cards__img" src="./img/icons/offer/offer-1.png" alt="Базовая синхронизация">
 								<h3 class="offer-cards__title">
 									Базовая синхронизация
 								</h3>
@@ -327,7 +328,8 @@
 						<div class="swiper-slide">
 							<div class="offer-cards__item">
 
-								<img class="offer-cards__img" src="./img/icons/offer/offer-2.png" alt="offer">
+								<img class="offer-cards__img" src="./img/icons/offer/offer-2.png"
+									alt="	Расширенная синхронизация">
 								<h3 class="offer-cards__title">
 									Расширенная синхронизация
 								</h3>
@@ -390,7 +392,7 @@
 						<div class="swiper-slide">
 							<div class="offer-cards__item">
 
-								<img class="offer-cards__img" src="./img/icons/offer/offer-3.png" alt="offer">
+								<img class="offer-cards__img" src="./img/icons/offer/offer-3.png" alt="Полная синхронизация">
 								<h3 class="offer-cards__title">
 									Полная синхронизация
 								</h3>
@@ -682,13 +684,13 @@
 
 				<ul class="cases__list">
 					<li class="cases__list-item">
-						<img src="./img/icons/cases/logo_kriogaz_1x.png" alt="icon">
+						<img src="./img/icons/cases/logo_kriogaz_1x.png" alt="Криогаз">
 					</li>
 					<li class="cases__list-item">
-						<img src="./img/icons/cases/logo_BBraun_1x.png" alt="icon">
+						<img src="./img/icons/cases/logo_BBraun_1x.png" alt="Braun">
 					</li>
 					<li class="cases__list-item">
-						<img src="./img/icons/cases/Baltkam_1x.png" alt="icon">
+						<img src="./img/icons/cases/Baltkam_1x.png" alt="Балткам">
 					</li>
 				</ul>
 
@@ -702,7 +704,7 @@
 
 						<div class="swiper-slide">
 							<div class="cases__slide-box">
-								<img class="cases-slide__logo" src="./img/icons/cases/logo_kriogaz_1x.png" alt="logo">
+								<img class="cases-slide__logo" src="./img/icons/cases/logo_kriogaz_1x.png" alt="Криогаз">
 
 								<div class="cases-slide__item">
 									<h3 class="cases-slide__title">ЗАО "КРИОГАЗ"</h3>
@@ -757,7 +759,7 @@
 
 						<div class="swiper-slide">
 							<div class="cases__slide-box">
-								<img class="cases-slide__logo" src="./img/icons/cases/logo_BBraun_1x.png" alt="logo">
+								<img class="cases-slide__logo" src="./img/icons/cases/logo_BBraun_1x.png" alt="Braun">
 
 								<div class="cases-slide__item">
 									<h3 class="cases-slide__title">ЗАО "КРИОГАЗ"</h3>
@@ -810,7 +812,7 @@
 
 							<div class="cases__slide-box">
 
-								<img class="cases-slide__logo" src="./img/icons/cases/Baltkam_1x.png" alt="logo">
+								<img class="cases-slide__logo" src="./img/icons/cases/Baltkam_1x.png" alt="Балткам">
 
 								<div class="cases-slide__item">
 									<h3 class="cases-slide__title">ЗАО "КРИОГАЗ"</h3>
@@ -892,11 +894,10 @@
 						</address>
 					</div>
 					<div class="contacts__phones">
-						<h3 class="contacts__adress-title">Телефоны:</h3>
+						<h3 class="contacts__adress-title">Телефон:</h3>
 						<address>
 
-							<a class="contacts__tel" href="tel:+375257402263">+375 25 740-22-63 <span>&mdash;
-									MTS</span></a>
+							<a class="contacts__tel" href="tel:+375257402263">+375 25 740-22-63</a>
 						</address>
 					</div>
 					<div class="contacts__email">
@@ -980,16 +981,19 @@
 			<div class="modal__content">
 				<form action="server.php" class="form" method="post">
 					<h2 class="form__title"></h2>
-					<div class="form__close"><img src="./img/icons/modal/cross.svg" alt="icon" class="modal__close-img">
+					<div class="form__close"><img src="./img/icons/modal/cross.svg" alt="Закрыть" class="modal__close-img">
 					</div>
 					<label for="name">Ваше имя</label>
-					<input type="text" id="name" name="name">
+					<input type="text" id="name" name="name" required>
+
+					<label for="agency">Организация</label>
+					<input type="text" id="agency" name="agency" required>
 
 					<label for="phone">Телефон</label>
 					<input class="phone" type="tel" id="phone" name="phone" required>
 
 					<label for="email">Email</label>
-					<input type="email" id="email" name="email">
+					<input type="email" id="email" name="email" required>
 
 					<label for="text">Комментарий</label>
 					<textarea id="text" name="text"></textarea>
