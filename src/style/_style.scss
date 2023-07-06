@@ -754,7 +754,11 @@
 	@extend %Montserrat-700;
 	margin-bottom: 15px;
 }
-
+.cases-slide__desc,
+.cases-slide__result-item {
+	@extend %Montserrat-500;
+	line-height: 24px;
+}
 .cases-slide__title::after{
 	display: block;
 	position: absolute;
@@ -769,6 +773,9 @@
 	display: flex;
 	justify-content: space-between;
 }
+.cases-slide__title--result {
+	margin-top: 15px;
+}
 
 .cases-slide__logo{
 	max-height: 40px;
@@ -780,7 +787,7 @@
 
 .cases-pagination{
 	display: grid;
-	grid-template-columns: repeat(3,1fr);
+	grid-template-columns: repeat(2,1fr);
 
 }
 .cases-pagination>li{
@@ -837,10 +844,10 @@
 }
 
 .contacts__inner div:not(:last-child){
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 .contacts__adress-title{
-	margin-bottom: 15px;
+	margin-bottom: 8px;
 }
 
 .contacts__adress-title + address,.contacts__tel {

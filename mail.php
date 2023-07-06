@@ -14,9 +14,10 @@ $date = date("d.m.Y");
 $time = date("h:i");
 $from = $email;
 $subject = "Заявка c сайта";
-
+$website = "ms-exchange.by";
 
 $msg = "
+    Заявка с сайта: $website
     Имя: $name 
 	 Агенство: $agency
     Телефон: $phone 

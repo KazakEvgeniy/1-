@@ -17,7 +17,7 @@
 	<header class="header">
 		<div class="container">
 			<div class="header__wrapper header__wrapper--line">
-				<a href="#" class="logo">
+				<a href="javascript:scroll(0,0)" class="logo">
 					<img class="logo__img" src="img/logo/logo2.png" alt="logo">
 					<span class="logo__text">MODERN SOLUTION</span>
 				</a>
@@ -28,22 +28,22 @@
 					<div class="header__social">
 						<ul class="social-list">
 							<li class="social__item">
-								<a class="social-list__item-link" href="#">
+								<a class="social-list__item-link" aria-label="facebook" href="#">
 									<i class="fa-brands fa-facebook fa-xl" style="color: #65a8eb;"></i>
 								</a>
 							</li>
 							<li class="social__item">
-								<a class="social-list__item-link" href="#">
+								<a class="social-list__item-link" aria-label="instagram" href="#">
 									<i class="fa-brands fa-square-instagram fa-xl" style="color: #65a8eb;"></i>
 								</a>
 							</li>
 							<li class="social__item">
-								<a class="social-list__item-link" href="#">
+								<a class="social-list__item-link" aria-label="linkedin" href="#">
 									<i class="fa-brands fa-linkedin fa-xl" style="color: #65a8eb;"></i>
 								</a>
 							</li>
 							<li class="social__item">
-								<a class="social-list__item-link" href="#">
+								<a class="social-list__item-link" aria-label="telegram" href="#">
 									<i class="fa-brands fa-telegram fa-xl" style="color: #65a8eb;"></i>
 								</a>
 							</li>
@@ -54,7 +54,7 @@
 				<button class="header__btn" type="button" data-modal="modal">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
 
 				<div class="header-mobile">
-					<a class="header-mobile__link" href="tel:+375290000000">
+					<a class="header-mobile__link" href="tel:+375257402263">
 						<img class="header-mobile__img" src="./img/icons/header/phone.png" alt="Телефон" width="40"
 							height="40">
 					</a>
@@ -85,22 +85,22 @@
 					<li class="menu__list-item menu__list-item--social">
 						<ul class="social-list">
 							<li class="social__item">
-								<a class="social-list__item-link" href="#">
+								<a class="social-list__item-link" aria-label="facebook" href="#">
 									<i class="fa-brands fa-facebook fa-xl" style="color: #65a8eb;"></i>
 								</a>
 							</li>
 							<li class="social__item">
-								<a class="social-list__item-link" href="#">
+								<a class="social-list__item-link" aria-label="instagram" href="#">
 									<i class="fa-brands fa-square-instagram fa-xl" style="color: #65a8eb;"></i>
 								</a>
 							</li>
 							<li class="social__item">
-								<a class="social-list__item-link" href="#">
+								<a class="social-list__item-link" aria-label="linkedin" href="#">
 									<i class="fa-brands fa-linkedin fa-xl" style="color: #65a8eb;"></i>
 								</a>
 							</li>
 							<li class="social__item">
-								<a class="social-list__item-link" href="#">
+								<a class="social-list__item-link" aria-label="telegram" href="#">
 									<i class="fa-brands fa-telegram fa-xl" style="color: #65a8eb;"></i>
 								</a>
 							</li>
@@ -684,13 +684,10 @@
 
 				<ul class="cases__list">
 					<li class="cases__list-item">
-						<img src="./img/icons/cases/logo_kriogaz_1x.png" alt="Криогаз">
+						<img src="./img/icons/cases/razbor-auto.webp" alt="Авторазборка Полотково">
 					</li>
 					<li class="cases__list-item">
-						<img src="./img/icons/cases/logo_BBraun_1x.png" alt="Braun">
-					</li>
-					<li class="cases__list-item">
-						<img src="./img/icons/cases/Baltkam_1x.png" alt="Балткам">
+						<img src="./img/icons/cases/for-mobile.png" alt="ЧТУП Фо Мобайл">
 					</li>
 				</ul>
 
@@ -704,163 +701,92 @@
 
 						<div class="swiper-slide">
 							<div class="cases__slide-box">
-								<img class="cases-slide__logo" src="./img/icons/cases/logo_kriogaz_1x.png" alt="Криогаз">
-
+								<img class="cases-slide__logo" src="./img/icons/cases/razbor-auto.webp" width="180" height="100"
+									alt="Авторазборка Полотково">
 								<div class="cases-slide__item">
-									<h3 class="cases-slide__title">ЗАО "КРИОГАЗ"</h3>
+									<h3 class="cases-slide__title">Авторазборка Полотково ООО "Дриблинг" </h3>
 									<p class="cases-slide__desc">
-										Отрасль: <span>Нефтегаз</span>
+										Отрасль: <span>Авторазборка</span>
 									</p>
 									<p class="cases-slide__desc">
-										Решение: <span>1С: УХ 8</span>
+										Решение: <span>1С: Управление авторазборкой 8</span>
 									</p>
 									<p class="cases-slide__desc">
-										Кол-во сотрудников: <span>> 200</span>
+										Кол-во сотрудников: <span>30</span>
 									</p>
 
-									<h3 class="cases-slide__title cases-slide__title--project">
-										ПРОЕКТ
-									</h3>
-
-									<p class="cases-slide__desc cases-slide__desc--project">
-										Кол-во сотрудников:
-									</p>
 									<h3 class="cases-slide__title cases-slide__title--result">
 										РЕЗУЛЬТАТ
 									</h3>
-
 									<ul class="cases-slide__result-list">
 										<li class="cases-slide__result-item">
-											Реализована бюджетная модель для организаций группы компаний;
+											Ключевой проблемой компании до начала внедрения было то, что данные по реализации
+											товаров и списании материалов велись в самописной программе, далее на бумаге эти данные
+											передавались бухгалтеру, который вводил их в бухгалтерскую программу. Данная схема
+											работы была нерациональная, и занимало огромное количество времени.
 										</li>
 										<li class="cases-slide__result-item">
-											Настроена интеграция с внешними информационными системами - источниками фактических
-											данных;
+											В ходе внедрения 1С: Управление авторазборкой был настроен обмен с Бухгалтерией, что
+											исключило дублирование информации, доработаны печатные формы, сделана автоматическая
+											выгрузка автозапчастей на торговые площадки ежедневно, реализовала выгрузка
+											автозапчастей на сайт компании.
 										</li>
 										<li class="cases-slide__result-item">
-											Разработана модель бюджетного контроля казначейских операций;
+											В настоящее время, программа помогает значительно экономить время сотрудникам и
+											автоматизировать рабочие процессы.
 										</li>
-										<li class="cases-slide__result-item">
-											Пользователи обучены работе с 1С:Управление холдингом.
-										</li>
-
 									</ul>
-									<h3 class="cases-slide__title cases-slide__title--training">
-										ОБУЧЕНИЕ
-									</h3>
-									<p class="cases-slide__desc cases-slide__desc--training">
-										Проведено обучение пользователей работе с "1С:Управление холдингом 8"
-									</p>
-
 								</div>
 							</div>
 						</div>
-
-
 						<div class="swiper-slide">
 							<div class="cases__slide-box">
-								<img class="cases-slide__logo" src="./img/icons/cases/logo_BBraun_1x.png" alt="Braun">
-
+								<img class="cases-slide__logo" src="./img/icons/cases/for-mobile.png" width="180" height="100"
+									alt="ЧТУП Фо Мобайл">
 								<div class="cases-slide__item">
-									<h3 class="cases-slide__title">ЗАО "КРИОГАЗ"</h3>
+									<h3 class="cases-slide__title">ЧТУП "Фо Мобайл" </h3>
 									<p class="cases-slide__desc">
-										Отрасль: <span>Нефтегаз</span>
-									</p>
-									<p class="cases-slide__desc">
-										Решение: <span>1С: УХ 8</span>
+										Отрасль: <span>Интернет-магазин мобильных аксессуаров и техники</span>
 									</p>
 									<p class="cases-slide__desc">
-										Кол-во сотрудников: <span>> 200</span>
+										Решение: <span>1С: Управление компанией</span>
 									</p>
-									<h3 class="cases-slide__title cases-slide__title--project">
-										ПРОЕКТ
-									</h3>
-									<p class="cases-slide__desc cases-slide__desc--project">
-										Кол-во сотрудников:
+									<p class="cases-slide__desc">
+										Кол-во сотрудников: <span>50</span>
 									</p>
+
 									<h3 class="cases-slide__title cases-slide__title--result">
 										РЕЗУЛЬТАТ
 									</h3>
 									<ul class="cases-slide__result-list">
 										<li class="cases-slide__result-item">
-											Реализована бюджетная модель для организаций группы компаний;
+											Программа была внедрена в 28 розничных магазинов, что привело к большей эффективности
+											работы:
 										</li>
 										<li class="cases-slide__result-item">
-											Настроена интеграция с внешними информационными системами - источниками фактических
-											данных;
+											&#8226; Произвелась интеграция с сайтом, что позволило контролировать интерес
+											покупателей,
+											автоматизировало процесс и снизила нагрузку на сотрудников.
 										</li>
 										<li class="cases-slide__result-item">
-											Разработана модель бюджетного контроля казначейских операций;
+											&#8226; Все товары выгружаются автоматически по категориям, это значительно упрощает
+											рабочий
+											процесс, экономит время и исключает ошибки.
 										</li>
 										<li class="cases-slide__result-item">
-											Пользователи обучены работе с 1С:Управление холдингом.
+											&#8226; Заказы покупателей выгружаются в 1С, что позволяет вести взаиморасчеты с
+											клиентами,
+											собирать информацию для анализа дополнительных затрат.
 										</li>
-
+										<li class="cases-slide__result-item">
+											После установки программы 1С: Управление компанией, эффективность работы
+											интернет-магазина улучшилась, а рабочие моменты автоматизированы.
+										</li>
 									</ul>
-									<h3 class="cases-slide__title cases-slide__title--training">
-										ОБУЧЕНИЕ
-									</h3>
-									<p class="cases-slide__desc cases-slide__desc--training">
-										Проведено обучение пользователей работе с "1С:Управление холдингом 8"
-									</p>
-
 								</div>
 							</div>
-
 						</div>
-						<div class="swiper-slide">
 
-							<div class="cases__slide-box">
-
-								<img class="cases-slide__logo" src="./img/icons/cases/Baltkam_1x.png" alt="Балткам">
-
-								<div class="cases-slide__item">
-									<h3 class="cases-slide__title">ЗАО "КРИОГАЗ"</h3>
-									<p class="cases-slide__desc">
-										Отрасль: <span>Нефтегаз</span>
-									</p>
-									<p class="cases-slide__desc">
-										Решение: <span>1С: УХ 8</span>
-									</p>
-									<p class="cases-slide__desc">
-										Кол-во сотрудников: <span>> 200</span>
-									</p>
-									<h3 class="cases-slide__title cases-slide__title--project">
-										ПРОЕКТ
-									</h3>
-									<p class="cases-slide__desc cases-slide__desc--project">
-										Кол-во сотрудников:
-									</p>
-									<h3 class="cases-slide__title cases-slide__title--result">
-										РЕЗУЛЬТАТ
-									</h3>
-									<ul class="cases-slide__result-list">
-										<li class="cases-slide__result-item">
-											Реализована бюджетная модель для организаций группы компаний;
-										</li>
-										<li class="cases-slide__result-item">
-											Настроена интеграция с внешними информационными системами - источниками фактических
-											данных;
-										</li>
-										<li class="cases-slide__result-item">
-											Разработана модель бюджетного контроля казначейских операций;
-										</li>
-										<li class="cases-slide__result-item">
-											Пользователи обучены работе с 1С:Управление холдингом.
-										</li>
-
-									</ul>
-									<h3 class="cases-slide__title cases-slide__title--training">
-										ОБУЧЕНИЕ
-									</h3>
-									<p class="cases-slide__desc cases-slide__desc--training">
-										Проведено обучение пользователей работе с "1С:Управление холдингом 8"
-									</p>
-
-								</div>
-							</div>
-
-						</div>
 					</div>
 
 				</div>
@@ -896,15 +822,23 @@
 					<div class="contacts__phones">
 						<h3 class="contacts__adress-title">Телефон:</h3>
 						<address>
-
 							<a class="contacts__tel" href="tel:+375257402263">+375 25 740-22-63</a>
 						</address>
 					</div>
 					<div class="contacts__email">
 						<h3 class="contacts__adress-title" lang="en">E-mail:</h3>
-						<a class="contacts__adress-link" href="mailto:it-cooperation@yandex.by">
-							it-cooperation@yandex.by</a>
-
+						<a class="contacts__adress-link" href="mailto:info@ms-exchange.by">
+							info@ms-exchange.by</a>
+					</div>
+					<div class="contacts__email">
+						<h3 class="contacts__adress-title">Бухгалтерия:</h3>
+						<a class="contacts__adress-link" href="mailto:buhgalter@modern-solution.by">
+							buhgalter@modern-solution.by</a>
+					</div>
+					<div class="contacts__email">
+						<h3 class="contacts__adress-title">Отдел маркетинга:</h3>
+						<a class="contacts__adress-link" href="mailto:marketing@modern-solution.by">
+							marketing@modern-solution.by</a>
 					</div>
 				</div>
 

@@ -3,11 +3,33 @@ import './index.scss';
 import Swiper from 'swiper/bundle';
 import { sendForm } from './modules/sendForm';
 
+
 document.addEventListener('DOMContentLoaded', (e) => {
+
 	e.preventDefault();
 	sendForm();
 
+	const anchors = document.querySelectorAll('a.menu__list-link');
 
+	for (let anchor of anchors) {
+		anchor.addEventListener('click', function (e) {
+			e.preventDefault()
+
+			const blockID = anchor.getAttribute('href');
+
+			document.querySelector(blockID).scrollIntoView({
+				behavior: 'smooth',
+				block: 'start'
+			})
+
+		})
+	}
+
+	history.pushState("", document.title, window.location.pathname);
+
+	console.log(window.location.hash)
+
+	window.location.hash = '';
 
 	const menu = document.querySelector('.menu'),
 		headerContacts = document.querySelector('.header__contacts'),
@@ -24,17 +46,18 @@ document.addEventListener('DOMContentLoaded', (e) => {
 		menuList.classList.toggle('header-mobile--menu');
 	})
 
-
 	menuListLink.forEach((item, i) => {
 		item.addEventListener('click', () => {
 			menuList.classList.toggle('header-mobile--menu');
 			section[i].style.paddingTop = 85 + 'px';
 			section[i].previousElementSibling.style.paddingBottom = 0 + 'px';
-		})
+		},)
 	})
 
 
+
 	window.addEventListener('scroll', () => {
+
 		let scroll = window.pageYOffset;
 		if (scroll === 0) {
 			header.classList.remove('header--top');
@@ -50,6 +73,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 			headerContacts.classList.add('header__contacts--top');
 			menuList.classList.add('menu__list--top');
 			menuListLink.forEach(link => link.classList.add('menu__list-link--size'));
+
 		}
 
 	});
@@ -111,7 +135,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 		allowTouchMove: false,
 		loop: true,
 		autoplay: {
-			delay: 2000,
+			delay: 5000,
 		},
 		pagination: {
 			el: '.cases-pagination',
